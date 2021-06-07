@@ -5,8 +5,8 @@ using UnityEngine;
 public class CreateObjects : MonoBehaviour
 {
     public float contadorTiempo = 0;
-    public Transform pos;
-    public GameObject aparicion;
+    public GameObject anuncioFrappe;
+    public GameObject anuncioEscuela;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,27 +16,26 @@ public class CreateObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //for (contadorTiempo = 0; contadorTiempo < 10; contadorTiempo++)
-        //{
+        
             contadorTiempo += Time.deltaTime;
-        //}
+        
         
 
-        if (contadorTiempo >= 10)
+        if (contadorTiempo >= 10 && contadorTiempo <= 11)
         {
-            AparecerAnuncio();
+            if (!anuncioFrappe.active)
+            {
+               anuncioFrappe.SetActive(true);
+            }
+        }
+
+        if (contadorTiempo >= 20 && contadorTiempo <= 21)
+        {
+            if (!anuncioEscuela.active)
+            {
+                anuncioEscuela.SetActive(true);
+            }
         }
     }
 
-    void AparecerAnuncio()
-    {
-        //if (aparicion != null)
-        //{
-            Instantiate(aparicion, pos.position, pos.rotation);
-        //}
-        //Destroy(gameObject);
-        
-
-
-    }
 }

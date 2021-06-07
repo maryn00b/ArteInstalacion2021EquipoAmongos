@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Dinero : MonoBehaviour
 {
     public Text textoContador;
-    private int puntuacion = 50000;
+    //private int GameController.puntuacion = 50000;
 
 
     public GameObject estrella1;
@@ -37,32 +37,58 @@ public class Dinero : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (puntuacion <= 45000 && puntuacion > 40000)
+        textoContador.text = GameController.puntuacion.ToString();
+
+        if (GameController.puntuacion <= 45000 && GameController.puntuacion > 40000)
         {
             imagenEstrella1.sprite = spriteEstrellaLlena;
         }
-        if (puntuacion <= 40000 && puntuacion > 35000)
+        if (GameController.puntuacion <= 40000 && GameController.puntuacion > 35000)
         {
             imagenEstrella2.sprite = spriteEstrellaLlena;
         }
-        if (puntuacion <= 35000 && puntuacion > 30000)
+        if (GameController.puntuacion <= 35000 && GameController.puntuacion > 30000)
         {
             imagenEstrella3.sprite = spriteEstrellaLlena;
         }
-        if (puntuacion <= 30000 && puntuacion > 25000)
+        if (GameController.puntuacion <= 30000 && GameController.puntuacion > 25000)
         {
             imagenEstrella4.sprite = spriteEstrellaLlena;
         }
-        if (puntuacion <= 25000 && puntuacion > 20000)
+        if (GameController.puntuacion <= 25000 && GameController.puntuacion > 20000)
         {
             imagenEstrella5.sprite = spriteEstrellaLlena;
         }
     }
 
-    public void restaDinero()
+    public void restaDineroAnuncioFrape()
     {
-        puntuacion = puntuacion - 3000;
-        textoContador.text = puntuacion.ToString();
+        GameController.puntuacion = GameController.puntuacion - 1000;
+        textoContador.text = GameController.puntuacion.ToString();
+    }
+
+    public void restaDineroAnuncioEscuelas()
+    {
+        GameController.puntuacion = GameController.puntuacion - 3000;
+        textoContador.text = GameController.puntuacion.ToString();
+    }
+
+    public void restaDineroDamnificados()
+    {
+        GameController.puntuacion = GameController.puntuacion - 5000;
+        textoContador.text = GameController.puntuacion.ToString();
+    }
+
+    public void restaDineroIndigenas()
+    {
+        GameController.puntuacion = GameController.puntuacion - 2000;
+        textoContador.text = GameController.puntuacion.ToString();
+    }
+
+    public void restaDineroVoluntariado()
+    {
+        GameController.puntuacion = GameController.puntuacion - 8000;
+        textoContador.text = GameController.puntuacion.ToString();
     }
 
 
