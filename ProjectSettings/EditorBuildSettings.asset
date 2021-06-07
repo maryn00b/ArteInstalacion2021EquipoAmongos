@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Audio Volume Control System/AudioSystem.unity
+    path: Assets/Scenes/EscenaFinal.unity
     guid: d384aadd472b2d6419265a96997083ea
   m_configObjects: {}
