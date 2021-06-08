@@ -24,6 +24,9 @@ public class Dinero : MonoBehaviour
     public Sprite spriteEstrellaLlena;
     public Sprite spriteEstrellaVacia;
 
+    public GameObject finalizarEstrellas;
+    bool estrellasLlenas = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,23 +45,40 @@ public class Dinero : MonoBehaviour
         if (GameController.puntuacion <= 45000 && GameController.puntuacion > 40000)
         {
             imagenEstrella1.sprite = spriteEstrellaLlena;
+            estrellasLlenas = false;
         }
         if (GameController.puntuacion <= 40000 && GameController.puntuacion > 35000)
         {
             imagenEstrella2.sprite = spriteEstrellaLlena;
+            estrellasLlenas = false;
         }
         if (GameController.puntuacion <= 35000 && GameController.puntuacion > 30000)
         {
             imagenEstrella3.sprite = spriteEstrellaLlena;
+            estrellasLlenas = false;
         }
         if (GameController.puntuacion <= 30000 && GameController.puntuacion > 25000)
         {
             imagenEstrella4.sprite = spriteEstrellaLlena;
+            estrellasLlenas = false;
         }
         if (GameController.puntuacion <= 25000 && GameController.puntuacion > 20000)
         {
             imagenEstrella5.sprite = spriteEstrellaLlena;
+            estrellasLlenas = true;
         }
+
+        if (estrellasLlenas)
+        {
+            if (!finalizarEstrellas.active)
+            {
+                finalizarEstrellas.SetActive(true);
+                //estrellasLlenas = true;
+            }
+        }
+
+        
+
     }
 
     public void restaDineroAnuncioFrape()
