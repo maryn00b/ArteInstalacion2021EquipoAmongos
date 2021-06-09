@@ -12,13 +12,17 @@ public class MuestraVideo : MonoBehaviour
     void Start()
     {
         player = GetComponent<VideoPlayer>();
-        player.url = Path.Combine(Application.streamingAssetsPath + streamingVideoClip);
+        player.url = Path.Combine(Application.streamingAssetsPath, streamingVideoClip);
+        player.isLooping = false;
         player.Pause();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (InicioVideo.toco && !player.isPlaying)
+        {
+            player.Play();
+        }
     }
 }
