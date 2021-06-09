@@ -2358,7 +2358,7 @@ GameObject:
   - component: {fileID: 463947842}
   - component: {fileID: 463947841}
   m_Layer: 0
-  m_Name: PlacaIlustracion2
+  m_Name: PlacaIlustracion5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6873,7 +6873,7 @@ GameObject:
   - component: {fileID: 1489900019}
   - component: {fileID: 1489900018}
   m_Layer: 0
-  m_Name: PlacaIlustracion2
+  m_Name: PlacaIlustracion4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7917,7 +7917,7 @@ Transform:
   m_GameObject: {fileID: 1619952881}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.338, y: 0.426, z: -1.8}
-  m_LocalScale: {x: 0.28901398, y: 0.105096, z: 1.0913254}
+  m_LocalScale: {x: 0.3, y: 0.1, z: 1.0913254}
   m_Children: []
   m_Father: {fileID: 532527579}
   m_RootOrder: 1
@@ -8551,7 +8551,7 @@ GameObject:
   - component: {fileID: 1746033349}
   - component: {fileID: 1746033348}
   m_Layer: 0
-  m_Name: PlacaIlustracion2
+  m_Name: PlacaIlustracion3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9307,8 +9307,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878519346}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.363, y: 0.443, z: -1.8}
-  m_LocalScale: {x: 0.24636573, y: 0.09854629, z: 0.20466252}
+  m_LocalPosition: {x: 0.336, y: 0.4316, z: -1.8}
+  m_LocalScale: {x: 0.3, y: 0.1, z: 0.20466252}
   m_Children: []
   m_Father: {fileID: 674829586}
   m_RootOrder: 1
