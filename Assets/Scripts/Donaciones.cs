@@ -31,49 +31,49 @@ public class Donaciones : MonoBehaviour
             textoContador.text = donacion.ToString();
             reclamo = false;
         }
-        if (contadorTiempo >= 9 && contadorTiempo <= 10)
+        else if (contadorTiempo >= 9 && contadorTiempo <= 10)
         {
             donacion = donacion + 10;
             textoContador.text = donacion.ToString();
             reclamo = false;
         }
-        if (contadorTiempo >= 10 && contadorTiempo <= 11)
+        else if (contadorTiempo >= 10 && contadorTiempo <= 11)
         {
             donacion = donacion + 5;
             textoContador.text = donacion.ToString();
             reclamo = false;
         }
-        if (contadorTiempo >= 12 && contadorTiempo <= 13)
+        else if (contadorTiempo >= 12 && contadorTiempo <= 13)
         {
             donacion = donacion + 1;
             textoContador.text = donacion.ToString();
             reclamo = false;
         }
-        if (contadorTiempo >= 15 && contadorTiempo <= 16)
+        else if (contadorTiempo >= 15 && contadorTiempo <= 16)
         {
             donacion = donacion + 7;
             textoContador.text = donacion.ToString();
             reclamo = false;
         }
-        if (contadorTiempo >= 18 && contadorTiempo <= 19)
+        else if (contadorTiempo >= 18 && contadorTiempo <= 19)
         {
             donacion = donacion + 3;
             textoContador.text = donacion.ToString();
             reclamo = false;
         }
-        if (contadorTiempo >= 20 && contadorTiempo <= 21)
+        else if (contadorTiempo >= 20 && contadorTiempo <= 21)
         {
             donacion = donacion + 15;
             textoContador.text = donacion.ToString();
             reclamo = false;
         }
-        if (contadorTiempo >= 22 && contadorTiempo <= 23)
+        else if (contadorTiempo >= 22 && contadorTiempo <= 23)
         {
             donacion = donacion + 4;
             textoContador.text = donacion.ToString();
             reclamo = false;
         }
-        if (contadorTiempo >= 25 && contadorTiempo <= 26)
+        else if (contadorTiempo >= 25 && contadorTiempo <= 26)
         {
             donacion = donacion + 20;
             textoContador.text = donacion.ToString();
