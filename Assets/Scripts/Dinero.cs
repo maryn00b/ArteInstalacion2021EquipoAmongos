@@ -78,24 +78,33 @@ public class Dinero : MonoBehaviour
 
         if (estrellasLlenas)
         {
-            if (!finalizarEstrellas.active && ayuda == false)
+            if (!finalizarEstrellas.active)
             {
-                ayuda = false;
+                //ayuda = false;
                 finalizarEstrellas.SetActive(true);
+                estrellasLlenas = false;
                 //cerrarSigno.SetActive(true);
                 //estrellasLlenas = true;
                 //ayuda = true;
             }
             //ayuda = true;
-
-            else if (finalizarEstrellas.active && ayuda == true)
+            
+            /*else if (finalizarEstrellas.active && ayuda == true)
             {
                 ayuda = true;
                 finalizarEstrellas.SetActive(false);
-            }
+            }*/
         }
-
         
+
+        /*if (finalizarEstrellas.active)
+        {
+            estrellasLlenas = false;
+            //ayuda = true;
+            //finalizarEstrellas.SetActive(false);
+        }*/
+
+
 
     }
 
