@@ -6,16 +6,16 @@ using UnityEngine.UI;
 public class InicioVideo : MonoBehaviour
 {
     public static bool toco = false;
-    Button btnToco;
-    // Start is called before the first frame update
-    void Start()
-    {
-        btnToco = GameObject.Find("btnToco").GetComponent<Button>();
-    }
 
-    public void OnbtnTocoClick()
+    private void OnTriggerEnter(Collider other)
     {
-        toco = true;
-        btnToco.transform.position = new Vector2(-1000, -1000);
+        Debug.Log("OnTriggerEnter");
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("OnTriggerEnterJugador");
+            toco = true;
+        }
+        
     }
+    
 }
