@@ -9,15 +9,15 @@ public class EscalarMujer3 : MonoBehaviour
     {
         if (isSmall)
         {
-            gameObject.transform.position = new Vector3(34, 1, 3);
-            gameObject.transform.localScale = new Vector3(10, 10, 0.1f);
+            gameObject.transform.position = new Vector3(-1551.59f, 331.04f, -93.76f);
+            gameObject.transform.localScale = new Vector3(2.469797f, 2.469797f, 0.03f);
             isSmall = false;
         }
 
         else if (!isSmall)
         {
-            gameObject.transform.position = new Vector3(34, 2, 3);
-            gameObject.transform.localScale = new Vector3(0.8f, 0.8f, 0.01f);
+            gameObject.transform.position = new Vector3(-1551.7f, 331.86f, -93.681f);
+            gameObject.transform.localScale = new Vector3(0.631488f, 0.631488f, 0.01f);
             isSmall = true;
         }
     }

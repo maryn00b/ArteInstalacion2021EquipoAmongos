@@ -25,6 +25,7 @@ public class Dinero : MonoBehaviour
     public Sprite spriteEstrellaVacia;
 
     public GameObject finalizarEstrellas;
+    public GameObject cerrarSigno;
     bool estrellasLlenas = false;
 
     // Start is called before the first frame update
@@ -73,6 +74,7 @@ public class Dinero : MonoBehaviour
             if (!finalizarEstrellas.active)
             {
                 finalizarEstrellas.SetActive(true);
+                cerrarSigno.SetActive(true);
                 //estrellasLlenas = true;
             }
         }
