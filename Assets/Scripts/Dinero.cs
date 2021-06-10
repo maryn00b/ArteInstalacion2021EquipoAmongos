@@ -25,8 +25,9 @@ public class Dinero : MonoBehaviour
     public Sprite spriteEstrellaVacia;
 
     public GameObject finalizarEstrellas;
-    public GameObject cerrarSigno;
+    //public GameObject cerrarSigno;
     bool estrellasLlenas = false;
+    bool ayuda = false;
 
     // Start is called before the first frame update
     void Start()
@@ -47,35 +48,50 @@ public class Dinero : MonoBehaviour
         {
             imagenEstrella1.sprite = spriteEstrellaLlena;
             estrellasLlenas = false;
+            ayuda = false;
+
         }
         if (GameController.puntuacion <= 40000 && GameController.puntuacion > 35000)
         {
             imagenEstrella2.sprite = spriteEstrellaLlena;
             estrellasLlenas = false;
+            ayuda = false;
         }
         if (GameController.puntuacion <= 35000 && GameController.puntuacion > 30000)
         {
             imagenEstrella3.sprite = spriteEstrellaLlena;
             estrellasLlenas = false;
+            ayuda = false;
         }
         if (GameController.puntuacion <= 30000 && GameController.puntuacion > 25000)
         {
             imagenEstrella4.sprite = spriteEstrellaLlena;
             estrellasLlenas = false;
+            ayuda = false;
         }
         if (GameController.puntuacion <= 25000 && GameController.puntuacion > 20000)
         {
             imagenEstrella5.sprite = spriteEstrellaLlena;
             estrellasLlenas = true;
+            ayuda = false;
         }
 
         if (estrellasLlenas)
         {
-            if (!finalizarEstrellas.active)
+            if (!finalizarEstrellas.active && ayuda == false)
             {
+                ayuda = false;
                 finalizarEstrellas.SetActive(true);
-                cerrarSigno.SetActive(true);
+                //cerrarSigno.SetActive(true);
                 //estrellasLlenas = true;
+                //ayuda = true;
+            }
+            //ayuda = true;
+
+            else if (finalizarEstrellas.active && ayuda == true)
+            {
+                ayuda = true;
+                finalizarEstrellas.SetActive(false);
             }
         }
 

@@ -9,8 +9,5 @@ public class CambioEscena : MonoBehaviour
     {
         SceneManager.LoadScene("Creditos");
     }
-    public void pruebachangeScene()
-    {
-        SceneManager.LoadScene("EscenaFinal");
-    }
+    
 }
