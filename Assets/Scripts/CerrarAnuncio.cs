@@ -14,7 +14,7 @@ public class CerrarAnuncio : MonoBehaviour
 
     public void cerrarAnuncio()
     {
-        if (finalizarEstrellas.active && cerrarSigno.active)
+        if (finalizarEstrellas.active)
         {
             finalizarEstrellas.SetActive(false);
             cerrarSigno.SetActive(false);
