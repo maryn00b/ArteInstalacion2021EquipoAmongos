@@ -37,6 +37,7 @@ public class Dinero : MonoBehaviour
         imagenEstrella3 = estrella3.GetComponent<Image>();
         imagenEstrella4 = estrella4.GetComponent<Image>();
         imagenEstrella5 = estrella5.GetComponent<Image>();
+        
     }
 
     // Update is called once per frame
@@ -71,12 +72,19 @@ public class Dinero : MonoBehaviour
         }
         if (GameController.puntuacion <= 25000 && GameController.puntuacion > 20000)
         {
+            if (!estrellasLlenas)
+            {
+                estrellasLlenas = true;
+                finalizarEstrellas.SetActive(true);
+            }
             imagenEstrella5.sprite = spriteEstrellaLlena;
-            estrellasLlenas = true;
+            
             ayuda = false;
+            
+
         }
 
-        if (estrellasLlenas)
+        /*if (estrellasLlenas)
         {
             if (!finalizarEstrellas.active)
             {
@@ -87,14 +95,12 @@ public class Dinero : MonoBehaviour
                 //estrellasLlenas = true;
                 //ayuda = true;
             }
-            //ayuda = true;
-            
-            /*else if (finalizarEstrellas.active && ayuda == true)
+           else
             {
                 ayuda = true;
                 finalizarEstrellas.SetActive(false);
-            }*/
-        }
+            }
+        } */
         
 
         /*if (finalizarEstrellas.active)
