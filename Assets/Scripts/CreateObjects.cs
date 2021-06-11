@@ -25,7 +25,7 @@ public class CreateObjects : MonoBehaviour
         
         
 
-        if (contadorTiempo >= 60 && contadorTiempo <= 61)
+        if (contadorTiempo >= 30 && contadorTiempo <= 31)
         {
             if (!anuncioFrappe.active)
             {
@@ -33,7 +33,7 @@ public class CreateObjects : MonoBehaviour
             }
         }
 
-        if (contadorTiempo >= 120 && contadorTiempo <= 121)
+        if (contadorTiempo >= 50 && contadorTiempo <= 51)
         {
             if (!anuncioEscuela.active)
             {
@@ -41,7 +41,7 @@ public class CreateObjects : MonoBehaviour
             }
         }
 
-        if (contadorTiempo >= 180 && contadorTiempo <= 181)
+        if (contadorTiempo >= 70 && contadorTiempo <= 71)
         {
             if (!anuncioDamnificados.active)
             {
@@ -49,7 +49,7 @@ public class CreateObjects : MonoBehaviour
             }
         }
 
-        if (contadorTiempo >= 240 && contadorTiempo <= 241)
+        if (contadorTiempo >= 90 && contadorTiempo <= 91)
         {
             if (!anuncioIndigenas.active)
             {
@@ -57,7 +57,7 @@ public class CreateObjects : MonoBehaviour
             }
         }
 
-        if (contadorTiempo >= 300 && contadorTiempo <= 301)
+        if (contadorTiempo >= 100 && contadorTiempo <= 110)
         {
             if (!anuncioVoluntariado.active)
             {
