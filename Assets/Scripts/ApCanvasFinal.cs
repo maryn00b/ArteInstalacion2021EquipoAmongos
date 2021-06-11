@@ -10,7 +10,7 @@ public class ApCanvasFinal : MonoBehaviour
 
     public GameObject donacionesRecibidas;
     public GameObject ayuda;
-    public GameObject foto;
+    //public GameObject foto;
     bool aparecer = false;
     // Start is called before the first frame update
     void Start()
@@ -45,11 +45,11 @@ public class ApCanvasFinal : MonoBehaviour
                 ayuda.SetActive(true);
 
             }
-            if (!foto.active)
+            /*if (!foto.active)
             {
                 foto.SetActive(true);
 
-            }
+            }*/
         }
     }
 }

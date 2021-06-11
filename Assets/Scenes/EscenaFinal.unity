@@ -1949,11 +1949,11 @@ RectTransform:
   m_Father: {fileID: 1219686740}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 16, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 62}
   m_SizeDelta: {x: 700, y: 600}
-  m_Pivot: {x: 0, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &807552458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2543,7 +2543,6 @@ MonoBehaviour:
   contadorTiempo: 0
   donacionesRecibidas: {fileID: 1572616156}
   ayuda: {fileID: 807552456}
-  foto: {fileID: 817948422}
 --- !u!4 &1000568472
 Transform:
   m_ObjectHideFlags: 0
