@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class FotoWebcam : MonoBehaviour
 {
-public class CameraScript : MonoBehaviour
-{
+
 
     static WebCamTexture backCam;
 
@@ -25,5 +24,5 @@ public class CameraScript : MonoBehaviour
     {
 
     }
-}
+
 }
