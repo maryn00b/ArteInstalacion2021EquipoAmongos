@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PruebaTexto : MonoBehaviour
+public class Dialogos2 : MonoBehaviour
 {
     public TextAsset inkJSON;
     private Story story;
@@ -39,8 +39,8 @@ public class PruebaTexto : MonoBehaviour
             choiceButton.onClick.AddListener(delegate {
                 if (actual == "Comenzar")
                 {
-                    Debug.Log("Evento Terminar");
-                    SceneManager.LoadScene("RecorridoMuseo");
+                    InteraccionesRobot.walk = true;
+                    Debug.Log(InteraccionesRobot.walk);
                 }
                 else
                 {
