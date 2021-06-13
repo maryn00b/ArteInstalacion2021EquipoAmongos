@@ -82,7 +82,7 @@ public class Dinero : MonoBehaviour
             
             ayuda = false;
             camara.SetActive(true);
-            Panels2.panelUltimo = true;
+            
 
 
 

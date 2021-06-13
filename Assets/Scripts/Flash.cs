@@ -10,6 +10,7 @@ public class Flash : MonoBehaviour
     {
         foto = true;
         Debug.Log(foto);
+        Panels2.panelUltimo = true;
     }
     
 }
