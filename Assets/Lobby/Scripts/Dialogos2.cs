@@ -42,10 +42,17 @@ public class Dialogos2 : MonoBehaviour
                     InteraccionesRobot.walk = true;
                     Debug.Log(InteraccionesRobot.walk);
                 }
+                if (actual == "Terminar")
+                {
+                    Panels2.cerrarPanel = true;
+                   
+                }
+
                 else
                 {
                     chooseStoryChoice(choice);
                 }
+
 
             });
 

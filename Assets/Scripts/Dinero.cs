@@ -14,6 +14,7 @@ public class Dinero : MonoBehaviour
     public GameObject estrella3;
     public GameObject estrella4;
     public GameObject estrella5;
+    public GameObject camara;
 
     Image imagenEstrella1;
     Image imagenEstrella2;
@@ -80,7 +81,10 @@ public class Dinero : MonoBehaviour
             imagenEstrella5.sprite = spriteEstrellaLlena;
             
             ayuda = false;
-            
+            camara.SetActive(true);
+            Panels2.panelUltimo = true;
+
+
 
         }
 
